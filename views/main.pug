@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" type="text/css" href="/styles/style.css")
+        title Ресторан
+        script(src="/JS/test.js")
+    body
+
+        div(class='header')
+            img(src='/images/logo.png')
+            div(class='trash')
+                button(type='button' onclick='GETT()') Корзина #{amm} шт.
+        div(class='category')
+            p Меню
+        each good in goods
+            div(class='card')
+                div(class='product_'+good['specid'])
+                    div(class='product_image')
+                        if good['Image'] == null
+                            img(src='/images/null.png')
+                        else
+                            img(src='/images/'+good['Image'])
+                    div(class='product_name')
+                        p #{good['Name']}
+                    p #{good['Description']}                                         
+                    footer 
+                        div(class='product_cost')
+                            p Цена: #{good['Cost']}p
+                        div(class='product_button')
+                            button(type='button' class='atuin-btn' data-id=good['id'] onclick='test('+good['id']+')') В корзину

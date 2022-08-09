@@ -1,0 +1,34 @@
+body 
+{
+	background:url(/images/trash.png) no-repeat center center fixed;
+    background-size: contain;
+    background-color: rgb(233, 233, 233)
+}
+a {
+    display: inline-flex;
+    margin: 10px;
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase; 
+    font-family: 'Roboto Condensed', Тahoma, sans-serif;
+    background: #337AB7;
+    cursor: pointer;
+    border: 2px solid #BFE2FF;
+    outline: 1px solid;
+    outline-color: #337AB7;
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);  
+}
+a:hover,
+a:active,
+a:focus {
+    box-shadow: inset 0 0 20px #BFE2FF;
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    color: #FFF;
+}

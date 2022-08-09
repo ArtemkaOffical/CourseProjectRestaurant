@@ -1,0 +1,236 @@
+body {
+    background-color: rgb(233, 233, 233)
+}
+
+button {
+    display: inline-flex;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    line-height: 20px;
+    padding: 12px 30px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', Тahoma, sans-serif;
+    background: #337AB7;
+    cursor: pointer;
+    border: 2px solid #BFE2FF;
+    overflow: hidden;
+    z-index: 1;
+}
+
+button:hover,
+button:active,
+button:focus {
+    color: #FFF;
+}
+
+button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -50px;
+    bottom: 0;
+    left: 0;
+    border-right: 50px solid transparent;
+    border-top: 50px solid #2D6B9F;
+    transition: transform 0.5s;
+    transform: translateX(-100%);
+    z-index: -1;
+}
+
+button:hover:before,
+button:active:before,
+button:focus:before {
+    transform: translateX(0);
+}
+
+p {
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 10px;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    height: 150px;
+}
+
+.card p {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.card footer {
+    bottom: 0;
+    position: absolute;
+    width: 200px;
+}
+
+.card footer .product_cost {
+    float: left;
+    width: 100px;
+    margin-top: 5px;
+}
+
+.card footer .product_cost1 {
+    position: relative;
+    float: left;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.card footer .product_button {
+    width: 100px;
+    margin-top: 10px;
+    float: right;
+}
+
+.card footer .product_button button {
+    width: 80px;
+    height: 30px;
+}
+
+.header img {
+    margin: 5px;
+    width: 170px;
+    height: 140px;
+}
+
+.category p {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.zakaz {
+    width: 100%;
+    height: 60px;
+}
+
+.zakaz button {
+    margin: 5px;
+}
+
+.zakaz p {
+    font-weight: bold;
+    margin: 5px;
+}
+
+.form {
+    width: 100%;
+    height: 250%;
+    position: relative;
+}
+
+.form .table1 {
+    margin: 10px;
+    width: 50%;
+    height: 90%;
+    float: left;
+}
+
+.form .table1 p {
+    margin-left: 2px;
+}
+
+.form .table2 {
+    width: 44%;
+    height: 90%;
+    margin-top: 0;
+    margin-left: 40%;
+}
+
+.form .table2 input {
+    margin: 10px;
+}
+
+.f {
+    width: 100%;
+    height: 30px;
+}
+
+.f3 {
+    position: relative;
+}
+
+.f3 p input {
+    margin-left: 20%;
+}
+
+.f3 p #ph {
+    margin-left: 14%;
+}
+
+.f3 p {
+    width: 100%;
+}
+
+.f1 {
+    margin-top: 4%;
+    width: 100%;
+    height: 30px;
+}
+
+#sum {
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    margin-top: 10%;
+}
+
+.atuin-btn {
+    display: inline-flex;
+    margin: 10px;
+    text-decoration: none;
+    position: relative;
+    font-size: 10px;
+    line-height: 20px;
+    padding: 0;
+    padding-left: 10px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', Тahoma, sans-serif;
+    background: #337AB7;
+    cursor: pointer;
+    border: 2px solid #BFE2FF;
+    outline: 1px solid;
+    outline-color: #337AB7;
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.atuin-btn:hover,
+.atuin-btn:active,
+.atuin-btn:focus {
+    box-shadow: inset 0 0 20px #BFE2FF;
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    color: #FFF;
+}
+
+.card footer .product_button1 {
+    width: 100px;
+    float: right;
+}
+
+.card footer .product_button1 button {
+    width: 80px;
+    height: 20px;
+    font-size: 10px;
+    text-align: center;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" type="text/css" href="/styles/style.css")
+        title Корзина
+        script(src="/JS/test.js")
+    body
+
+        div(class='header')
+            img(src='/images/logo.png')
+
+            div(class='zakaz')
+                button(type='button' onclick='Zakaz()') Оформление заказа
+                p Заказ на сумму: #{Price}
+        div(class='category')
+            p Товары
+        each good in goodss
+            if good['Count']!=0
+                div(class='card')
+                    div(class='product_'+good['specid'])
+                        div(class='product_image')
+                            if good['Image'] == null
+                                img(src='/images/null.png')
+                            else
+                                img(src='/images/'+good['Image']) 
+                        div(class='product_name')
+                            p #{good['Name']}
+                        p #{good['Description']}                                         
+                        footer 
+                            div(class='product_cost1')
+                                p Кол-во: #{good['Count']}
+                            div(class='product_button1')
+                                button(type='button' class='atuin-btn' data-id=good['id'] onclick='Delete('+good['id']+')') Удалить
+                                button(type='button' class='atuin-btn' data-id=good['id'] onclick='Add('+good['id']+')') Добавить

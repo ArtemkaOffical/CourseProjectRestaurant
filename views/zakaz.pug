@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" type="text/css" href="/styles/style.css")
+        title Оформление заказа
+    body
+        div(class='header')
+            img(src='/images/logo.png')      
+            div(class='zakaz')
+                button(type='button' onclick='print()') Напечатать чек
+            div(class='f3')
+                p(id='phone') Номер телефона <input type="text", id='ph' name=""/> 
+                p(id='FIO') ФИО <input type="text", id='fi' name=""/>
+                p(id='email') Email <input type="email", id='em' name=""/>
+            div(class='f')
+                p(id='dost') Способ доставки
+                <input type="radio", id='f' name="dost" /> Самовызов
+                <input type="radio", id ='f' name="dost" /> Доставка
+            div(class='f1')
+                p(id='opl') Способ оплаты
+                <input type="radio", id='f' name="dost" /> Наличными (в магазине)
+                <input type="radio", id ='f' name="dost" /> Картой (в магазине)
+            p(id='sum') Сумма: #{Prices}  
